@@ -10,7 +10,36 @@
     tools:context="com.lakeba.retrofitsample.MainActivity">
 
     <TextView
+        android:id="@+id/title_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/weather_data" />
+
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_textview"
+        android:layout_marginTop="20dp"
+        android:text="@string/call_weather_api"
+        android:textAllCaps="true"/>
+
+    <ProgressBar
+        android:id="@+id/call_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Theme.Holo.Light"
+        android:layout_below="@id/call_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/call_button"
+        android:layout_marginTop="20dp"
+        />
+
 </RelativeLayout>

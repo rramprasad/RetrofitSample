@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RetrofitSample</string>
+    <string name="weather_data">Weather Data</string>
+    <string name="call_weather_api">Call Weather API</string>
 </resources>
